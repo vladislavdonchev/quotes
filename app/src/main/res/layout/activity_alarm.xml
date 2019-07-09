@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!--This should be a separate component instead of an include.-->
+        <include layout="@layout/view_alarm"/>
+    </ScrollView>
+
+    <!--This should be a custom view instead of an include.-->
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_set_alarm"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

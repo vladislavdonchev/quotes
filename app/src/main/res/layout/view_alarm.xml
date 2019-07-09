@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/view_alarm_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textMedium"
+            android:text="@string/alarm_header"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/darkText"
+            android:textDirection="locale"/>
+
+    <EditText
+            android:id="@+id/view_alarm_price"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_alarm_header"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/textSmall"
+            android:layout_margin="4dp"
+            android:text="0.12345"/>
+
+    <Button
+            android:id="@+id/view_alarm_price_increase"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_alignBaseline="@id/view_alarm_price"
+            android:layout_toEndOf="@id/view_alarm_price"
+            style="@style/AppButton"
+            android:textSize="@dimen/textSmall"
+            android:layout_marginEnd="6dp"
+            android:text="+"/>
+
+    <Button
+            android:id="@+id/view_alarm_price_decrease"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_alignBaseline="@id/view_alarm_price"
+            android:layout_toEndOf="@id/view_alarm_price_increase"
+            style="@style/AppButton"
+            android:textSize="@dimen/textSmall"
+            android:text="-"/>
+
+    <TextView
+            android:id="@+id/view_alarm_price_difference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm_price_difference"
+            android:layout_below="@id/view_alarm_price"
+            android:textSize="@dimen/textSmall"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/darkText"
+            android:textDirection="locale"/>
+
+    <TextView
+            android:id="@+id/view_alarm_price_current_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm_rate"
+            android:textSize="@dimen/textSmall"
+            android:layout_below="@id/view_alarm_price_difference"
+            android:layout_alignParentStart="true"
+            android:textDirection="locale"/>
+
+    <TextView
+            android:id="@+id/view_alarm_price_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/view_alarm_price_current_rate"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/price_type"
+            android:textColor="@color/darkText"
+            android:textDirection="locale"/>
+
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/view_alarm_price_current_rate"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/view_alarm_price_type"
+            android:layoutDirection="locale">
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sell"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="@color/colorOutline"
+                android:layoutDirection="locale"/>
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buy"
+                android:buttonTint="@color/colorOutline"
+                android:layoutDirection="locale"/>
+    </RadioGroup>
+</RelativeLayout>

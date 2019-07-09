@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+    <TextView
+            android:id="@+id/quote_trade_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textMedium"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentStart="true"
+            android:text="@string/symbol"/>
+
+    <Button
+            android:id="@+id/quote_trade_button"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            style="@style/AppButton"
+            android:layout_below="@id/quote_trade_header"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="6dp"
+            android:text="@string/order"/>
+
+    <TextView
+            android:id="@+id/quote_trade_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/quote_trade_button"
+            android:layout_toEndOf="@id/quote_trade_button"
+            android:textSize="@dimen/textMedium"
+            android:text="0.12345"/>
+</RelativeLayout>

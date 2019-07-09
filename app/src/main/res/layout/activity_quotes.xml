@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.QuotesActivity">
+
+    <!--This should be a custom View instead of an include.-->
+    <include
+            android:id="@+id/activity_main_notification"
+            layout="@layout/notification_in_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_main_quotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/activity_main_notification"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"/>
+</RelativeLayout>

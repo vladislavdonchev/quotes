@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <ImageView
+                android:id="@+id/notification_in_app_icon"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_pro"/>
+
+        <TextView
+                android:id="@+id/notification_in_app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@id/notification_in_app_icon"
+                android:textSize="@dimen/textLarge"
+                android:textStyle="bold"
+                android:text="@string/professional_account_offer"
+                android:textDirection="locale"
+                android:textAlignment="gravity"/>
+
+        <TextView
+                android:id="@+id/notification_in_app_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notification_in_app_title"
+                android:layout_toEndOf="@id/notification_in_app_icon"
+                android:text="@string/professional_account_offer_message"
+                android:textSize="@dimen/textSmall"
+                android:textDirection="locale"
+                android:textAlignment="gravity"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
