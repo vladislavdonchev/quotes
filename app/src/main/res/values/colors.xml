@@ -6,4 +6,6 @@
     <color name="colorOutline">#272882</color>
     <color name="colorSecondary">#FFFFFF</color>
     <color name="darkText">#000000</color>
+    <color name="greenText">#2b8431</color>
+    <color name="redText">#cf0b0d</color>
 </resources>
